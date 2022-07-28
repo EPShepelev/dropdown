@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Custom dropdown</title>
+  </head>
+  <body>
+    <h1>Custom dropdown list</h1>
+    <p>
+      Put dropdown into parent block, add script and change style if you need
+    </p>
+    <div id="parent-block">
+      <!-- dropdown start -->
+      <div class="dropdown dropdown--js">
+        <button class="dropdown__btn">One (default)</button>
+        <div class="dropdown__list">
+          <div class="dropdown__item" data-value="value_1">One</div>
+          <div class="dropdown__item" data-value="value_2">Two</div>
+          <div class="dropdown__item" data-value="value_3">Three</div>
+        </div>
+        <input class="dropdown__hidden-input" value="value_1" />
+      </div>
+      <!-- dropdown end -->
+    </div>
+  </body>
+  <script src="dropdown.js"></script>
+</html>
